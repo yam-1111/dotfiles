@@ -1,0 +1,129 @@
+
+* {
+    font-family: JetBrainsMono, FontAwesome;
+    font-size: 11px;
+    font-weight: bold;
+    min-height: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+@define-color bg #23252e;
+@define-color fg #f2f2f2;
+@define-color red #ff0066;
+@define-color blue #51a2da;
+@define-color green #aaffaa;
+@define-color yellow #ffc762;
+@define-color orange #fa946e;
+@define-color vilet #cf8ef4;
+@define-color gray #343744;
+
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 15 0 15;
+    margin: 0 10;
+    border-radius: 0;
+}
+
+
+#custom-menu {
+    background-image: url('/home/owl/.config/waybar/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: @cyan;
+    padding: 0 6px;
+    margin: 5 20;
+}
+
+#taskbar button {
+    color: @bg;
+    background: @bg;
+    padding: 0 5 0 5;
+    margin: 4 0;
+    border-radius: 18;
+}
+
+#taskbar button:hover {
+    color: @bg;
+    background: @ng;
+    box-shadow: inset 0 0px #202020;
+    padding: 0 5 0 5;
+    margin: 4 0;
+    border-radius: 18;
+}
+
+#clock {
+    background: @gray;
+    color: @fg;
+    padding: 0 8 0 13;
+    margin: 4 0 4 5;
+    border-radius: 9 0 9 9;
+}
+
+#custom-weather {
+    background: @gray;
+    color: @fg;
+    padding: 0 13 0 8;
+    margin: 4 5 4 0;
+    border-radius: 0 9 9 0;
+}
+
+#tray {
+    background: @gray;
+    color: @fg;
+    padding: 0 8;
+    margin: 4 5 4 5;
+    border-radius: 18;
+}
+
+
+#custom-cmus {
+    background: @gray;
+    color: @fg;
+    padding: 0 10 0 10;
+    margin: 4 5 4 5;
+    border-radius: 18;
+}
+
+#pulseaudio {
+    background: @gray;
+    color: @fg;
+    padding: 0 10 0 10;
+    margin: 4 5 4 5;
+    border-radius: 18;
+}
+
+#cpu {
+    background: @gray;
+    color: @fg;
+    padding: 0 8 0 13;
+    margin: 4 0 4 5;
+    border-radius: 9 0 0 9;
+}
+
+#memory {
+    background: @gray;
+    color: @fg;
+    padding: 0 13 0 8;
+    margin: 4 5 4 0;
+    border-radius: 0 9 9 0;
+}
+
+#battery {
+    background: @gray;
+    color: @fg;
+    padding: 0 8;
+    margin: 4 10 4 5;
+    border-radius: 18;
+}
+
+#custom-power {
+    background: @gray;
+    color: @fg;
+    padding: 0 8;
+    margin: 4 10 4 5;
+    border-radius: 18;
+}
+

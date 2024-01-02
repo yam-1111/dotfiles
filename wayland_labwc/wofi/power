@@ -1,0 +1,88 @@
+#МОЙ КОНФИГ
+# ширина
+width=320
+# высота
+height=30
+
+# скрыть подменю
+no_actions=true
+# скрыть полосу прокрутки
+hide_scroll=true
+
+# количество колонок
+columns=1
+# размер иконок
+image_size=20
+# надпись в строке поиска
+
+# терминал по умалчанию
+term=kitty
+
+______________________________________________________________________________
+
+
+#ОСНОВНОЕ
+
+#insensitive=false включает поиск без учета регистра
+#filter_rate=RATE скорость обновления результатов в милисекундах
+#sort_order=ORDER порядок сортировки, default and alphabetical (по алфавиту)
+#matching=contains или fuzzy режим сопоставления
+#dynamic_lines=true вроде должен сокращаться под результаты, у меня не работает
+#exec_search=true поиск по двум энтерам, у меня не работает
+
+
+#ВНЕШНИЙ ВИД
+
+xoffset=1540
+#x=OFFSET то же самое что и xoffset
+yoffset=10
+#y=OFFSET то же самое что и yoffset
+#lines=LINES Задает высоту в количестве строк вместо пикселей
+hide_search=true
+#gtk_dark=false включает темный вариант темы если такая есть
+#password=* заменяет все на указанный символ, аля пароль
+#orientation=horizontal или vertical
+#allow_markup=false какая то хрень с разметкой
+#allow_images=false какая то хрень с обработкой изображений
+
+
+#ПОЛОЖЕНИЕ
+
+#layer=LAYER слой на котором будет запущен wofi: background, bottom, top, overlay
+#location=LOCATION положение wofi center 0, top_left 1, top 2, top_right 3, right 4, bottom_right 5, bottom 6, bottom_left 7, left 8
+normal_window=false
+
+
+#КЛАВИШИ УПРАВЛЕНИЯ
+
+#key_up=KEY кнопка перехода на верх
+#key_down=KEY кнопка перехода вниз
+#key_left=KEY кнопка перехода влево
+#key_right=KEY кнопка перехода вправо
+#key_forward=KEY кнопка перехода вперед
+#key_backward=KEY кнопка перехода назад
+#key_submit=KEY кнопка ввода
+#key_exit=KEY кнопка выхода
+#key_pgup=KEY кнопка перехода на одну страницу вверх
+#key_pgdn=KEY кнопка перехода на одну страницу вниз
+#key_expand=KEY яхз
+#key_hide_search=KEY кнопка скрытия панели поиска
+
+#cache_file=PATH указать кэш файл, яхз что это
+#parse_search=BOOL какая то херь с последовательностями изображений
+
+#search=STRING указывает, что нужно искать сразу при открытии, яхз как это рабтает
+#monitor=STRING вроде монитор на котором нужно запускать wofi
+
+#halign=center выравнивание start, end или center
+#content_halign=center тоже выравнивание start, end или center
+#valign=center тоже выравнивание start, end или center
+
+#line_wrap=word режим переноса строки, яхз что такое
+#global_coords=false что то с глобальными вычеслениями координат расположения
+
+#color=PATH путь к файлу с цветами
+#colors=PATH какая то хрень с цветами, типо несколько файлов
+
+#show=run drun dmenu способ поиска исполняемых файлов
+#mode=MODE тоже самое что и show

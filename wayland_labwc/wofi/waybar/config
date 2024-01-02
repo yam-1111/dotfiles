@@ -1,0 +1,121 @@
+{
+"layer": "top",
+"position": "top",
+
+"height": 20,
+"width": 1600,
+"margin-top": 2,
+
+"modules-left": [
+	"custom/menu", "wlr/taskbar"
+],
+
+"modules-center": [
+	// "clock", "custom/weather", "tray"
+	"clock"
+],
+
+"modules-right": [
+	"custom/cmus", "pulseaudio", "cpu", "memory","battery", "custom/power"
+],
+
+//-------------LEFT MODULES-------------
+
+"custom/menu": {
+	"format": "{icon}",
+	"format-icons": " ",
+   	"on-click": "set $menu dmenu_path | wofi --show drun -I | xargs swaymsg exec --",
+   	"escape": true
+},
+
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "icon-theme": "Colloid-dark",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+       "Alacritty"
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
+},
+
+
+//-------------CENTER MODULES-------------
+
+"clock": {
+	"format": "<span color=\"#aaffaa\"></span> {:%M %d %Y %H:%M %p}"
+},
+
+
+"tray": {
+	"icon-size": 16,
+	"spacing": 10
+},
+
+
+//--------------RIGHT MODULES--------------
+
+"custom/cmus": {
+	"format": "<span color=\"#aaffaa\"></span> {}",
+	"max-length": 45,
+	"interval": 10,
+	"exec": "cmus-remote -C \"format_print '%F'\"",
+	"exec-if": "pgrep cmus",
+	"on-click": "cmus-remote -u",
+	"on-scroll-up": "cmus-remote --next",
+	"on-scroll-down": "cmus-remote --prev",
+	"escape": true
+},
+
+"pulseaudio": {
+	"scroll-step": 5, // %, can be a float
+        "format": "<span color=\"#aaffaa\">{icon}</span> {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {"default": ["", "", ""]},
+	"on-click": "pavucontrol"
+},
+
+"cpu": {
+	"format": "<span color=\"#aaffaa\">Cpu:</span> {usage}%",
+	"tooltip": false
+},
+    
+"memory": {
+	"format": "<span color=\"#aaffaa\">Mem:</span> {}%"
+},
+
+"battery":{
+	"format": "<span  color=\"#aaffaa\" font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
+	"format-icons": ["", "", "", "", ""],
+	"format-time": "{H}h{M}m",
+	"format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
+	"format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  Charged",
+	"interval": 30,
+	"states": {
+		"warning": 25,
+		"critical": 10
+	},
+	"tooltip": false,
+	"on-click": "2"
+},
+
+
+"custom/power": {
+	"format": "<span color=\"#aaffaa\">{icon}</span>",
+        "format-icons": {"default": [""]},
+	"on-click": "/home/owl/.config/wofi/power.sh",
+},
+
+
+
+"escape": true,
+"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+}

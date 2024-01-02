@@ -1,0 +1,68 @@
+
+/* параметры вообще для всего */
+*{
+    font-family: ubuntu mono;
+}
+
+/* параметры для окна */
+window {
+    background-color: #23252e;
+}
+
+/* параметры для окна ввода */
+#input {
+    margin: -9px -30px;
+    border-radius: 0px;
+    border: none;
+    background-color: #23252e;
+    color: white;
+}
+
+/* параметры для окна с приложениями */
+#inner-box {
+    background-color: #23252e;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* параметры пространства вокруг окна wofi */
+#outer-box {
+    margin: 20px 20px;
+    padding: 0px;
+    background-color: #23252e;
+}
+
+/* параметры для полосы прокрутки */
+#scroll {
+}
+
+/* параметры для текста */
+#text {
+    padding: 5px;
+    color: white;
+    margin: 0px 0px;
+}
+
+/* параметры для 2й колонки если таковая имеется */
+#entry:nth-child(even){
+    background-color: #23252e;
+}
+
+/* параметры для выделенного пункта */
+#entry:selected {
+    background-color: #aaffaa;
+    font-color: #23252e;
+}
+
+/* параметры выделенного текста */
+#text:selected {
+    color: #23252e;
+    padding: 5px;
+}
+
+/* параметры для иконок */
+#img
+
+/* параметры для не выделенного */
+#unselected
+
