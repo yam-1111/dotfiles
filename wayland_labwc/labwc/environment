@@ -1,12 +1,14 @@
 # Тут лежат переменные окружения, они же меняют раскладку, а так же можно курсоры прописать
 
 # This allows xdg-desktop-portal-wlr to function (e.g. for screen-recording)
+
+#wlroots
 XDG_CURRENT_DESKTOP=wlroots
 XDG_SESSION_DESKTOP=wlroots
 XDG_SESSION_TYPE=wlroots
 
 # Настройка раскладки клавиатуры:
-XKB_DEFAULT_LAYOUT=us,ru
+XKB_DEFAULT_LAYOUT=us
 XKB_DEFAULT_OPTIONS=grp:alt_shift_toggle
 
 # Рыжий стартует под вялым, а не через иксы

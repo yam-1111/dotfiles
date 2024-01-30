@@ -4,8 +4,8 @@ margin=5
 padding=0,5,10
 border-size=2
 layer=overlay
-anchor=bottom-center
-background-color=#b148d2
+anchor=top-right
+background-color=#0e0121
 default-timeout=5000
 ignore-timeout=1
 
@@ -16,8 +16,8 @@ border-color=#b148d2
 default-timeout=5
 
 [urgency=high]
-border-color=#bf616a
+border-color=#0e0121
 
 
 [urgency=high]
-border-color=#bf616a
+border-color=#0e0121

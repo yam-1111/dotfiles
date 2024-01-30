@@ -1,10 +1,13 @@
-# Автозапуск
+# Аutostart
 
 ##### temp ######
-swaybg -i /home/vee/Downloads/sonoma.jpg &
+swaybg -i /home/vee/Downloads/sonoma3.jpg &
 waybar >/dev/null 2>&1 &
 mako >/dev/null 2>&1 &
+udiskie >/dev/null 2>&1 &
 
+#pcmanfm-qt --desktop
+# cairo-dock > /dev/null 2>&1 &
 
 
 # Так подключается утилита kanshi для управления профилями вывода изображений.
@@ -24,6 +27,7 @@ mako >/dev/null 2>&1 &
 # `wlr-randr --output <whatever> --off` because this re-arranges views
 # (since a837fef). Instead use a wlr-output-power-management client such as
 # https://git.sr.ht/~leon_plickat/wlopm
+
 swayidle -w \
 	timeout 300 'swaylock -f -c 000000' \
 	timeout 600 'wlopm --off \*' \

@@ -7,7 +7,7 @@
 
 # general
 border.width: 1
-padding.height: 3
+padding.height: 8
 
 # Цвета рамок окон
 window.active.border.color: #23252e
@@ -18,13 +18,13 @@ window.active.title.bg.color: #23252e
 window.inactive.title.bg.color: #23252e
 
 # Цвета и выравнивание текста заголовка окон
-window.active.label.text.color: #aaffaa
-window.inactive.label.text.color: #dfdfdf
+window.active.label.text.color: #FFFFFF
+window.inactive.label.text.color: #FFFFFF
 window.label.text.justify: center
 
 # Кнопки окон
-window.active.button.unpressed.image.color: #dfdfdf
-window.inactive.button.unpressed.image.color: #dfdfdf
+; window.active.button.unpressed.image.color: #dfdfdf
+; window.inactive.button.unpressed.image.color: #dfdfdf
 
 # Цвета кнопок "menu", "iconify", "max", "close" если нужно каждую своим цветом сделать
 #     window.active.button.iconify.unpressed.image.color: #333333
@@ -52,7 +52,7 @@ menu.separator.color: #888888
 
 
 # Цвета и бордеры окна которое появляется при переключении воркспейсов
-osd.bg.color: #282a33
-osd.border.color: #282a33
-osd.border.width: 1
-osd.label.text.color: #aaffaa
+; osd.bg.color: #282a33
+; osd.border.color: #282a33
+; osd.border.width: 1
+; osd.label.text.color: #aaffaa

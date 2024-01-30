@@ -19,9 +19,22 @@
 
 <!-- тема labwc / скругления / шрифт -->  
   <theme>
-    <name></name>
-    <cornerRadius>12</cornerRadius>
-    <font name="JetBrainsMono" size="10" />
+    <name>siduck-onedark</name>
+    <cornerRadius>8</cornerRadius>
+    <font place="ActiveWindow">
+      <name>Inter</name>
+      <size>9</size>
+      <weight>Bold</weight>
+      <slant>Normal</slant>
+    </font>
+
+    <font place="InactiveWindow">
+      <name>Inter</name>
+      <size>9</size>
+      <weight>Regular</weight>
+      <slant>Normal</slant>
+    </font>
+
   </theme>
 
 
@@ -30,27 +43,25 @@
     <repeatRate>25</repeatRate>
     <repeatDelay>600</repeatDelay>
 
-<!-- приложения -->
-    <keybind key="W-Return">
+<!-- Apps  -->
+    <keybind key="A-C-t">
       <action name="Execute" command="alacritty" />
     </keybind>
-    <keybind key="W-n">
-      <action name="Execute" command="nemo" />
+    <keybind key="W-t">
+      <action name="Execute" command="thunar" />
     </keybind>
-    <keybind key="W-i">
-      <action name="Execute" command="inkscape" />
+    <keybind key="W-s">
+      <action name="Execute" command="spotify" />
     </keybind>
-    <keybind key="W-b">
-      <action name="Execute" command="blender" />
-    </keybind>
-    <keybind key="W-l">
-      <action name="Execute" command="lutris" />
-    </keybind>
+
+
+<!--- LAUNCHER THEME -->
     <keybind key="W-d">
-      <action name="Execute" command="wofi --show drun -I" />
+      <action name="Execute" command="rofi -theme rounded-purple-dark.rasi -show drun" />
     </keybind>
+    
     <keybind key="Print">
-      <action name="Execute" command="grim" />
+      <action name="Execute" command="~/.config/scripts/ss.sh" />
     </keybind>
 
 <!-- управление окнами -->
@@ -99,10 +110,10 @@
 
 <!--XF86AudioLowerVolume and XF86AudioRaiseVolume" doesn't work will figure-->
     <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ +2" />
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ +5%" />
     </keybind>
     <keybind key="XF86AudioLowerVolume">
-      <action name="Execute" command=">amixer sset Master 5%-" />
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ -5%" />
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute" command="pactl set-sink-mute @DEFAULT_SINK@ toggle" />
@@ -113,9 +124,7 @@
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute" command="brightnessctl set 5%-" />
     </keybind>
-   <keybind key="A-C-t">
-      <action name="Execute" command="alacritty" />
-   </keybind>
+
 <!-- Перемещение приложения на воркспейс -->
     <keybind key="W-S-1">
       <action name="SendToDesktop">
@@ -149,22 +158,22 @@
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="W-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="W-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="W-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-1">
+    <keybind key="W-5">
       <action name="GoToDesktop">
         <to>5</to>
       </action>
