@@ -1,8 +1,8 @@
 
 * {
-    font-family: JetBrainsMono, FontAwesome;
-    font-size: 11px;
-    font-weight: bold;
+    font-family: Inter, FontAwesome;
+    font-size: 13px;
+    font-weight: 600;
     min-height: 0;
     border-radius: 0;
     padding: 0;
@@ -19,8 +19,10 @@
 @define-color gray #343744;
 
 
+
+
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 0 15 0 15;
     margin: 0 10;
     border-radius: 0;
@@ -28,50 +30,54 @@ window#waybar {
 
 
 #custom-menu {
-    background-image: url('/home/vee/.config/waybar/logo.svg');
+    /* background-image: url('/home/vee/.config/waybar/logo.svg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    color: @cyan;
-    padding: 0 6px;
-    margin: 5 20;
+    color: #FFFFFF;
+    padding: 0 4px;
+    margin: 4 10;
+    font-size: 18px;
+}
+
+#taskbar button.active{
+	color : #FFFFFF;
 }
 
 #taskbar button {
-    color: @bg;
-    background: @bg;
-    padding: 0 5 0 5;
+    padding: 0 5 0 3;
     margin: 4 0;
     border-radius: 18;
+    color: transparent;
 }
 
 #taskbar button:hover {
-    color: @bg;
+    color: #FFFFFF;
     background: @ng;
-    box-shadow: inset 0 0px #202020;
+    box-shadow: inset 0 0px  #23252e;
     padding: 0 5 0 5;
     margin: 4 0;
-    border-radius: 18;
+    border-radius: 20;
+    transition: all 0.5s ease-in-out;
 }
 
 #clock {
-    background: @gray;
+
     color: @fg;
-    padding: 0 8 0 13;
-    margin: 4 0 4 5;
+    /* padding: 0 8 0 13; */
+    margin: 3 25 3 5;
     border-radius: 9px;
 }
 
-#custom-weather {
-    background: @gray;
+#custom-time{
     color: @fg;
-    padding: 0 13 0 8;
-    margin: 4 5 4 0;
-    border-radius: 0 9 9 0;
+    /* padding: 0 8 0 13; */
+    margin: 3 25 3 5;
+    border-radius: 9px;
+    font-weight : 500;
 }
 
 #tray {
-    background: @gray;
     color: @fg;
     padding: 0 8;
     margin: 4 5 4 5;
@@ -80,7 +86,6 @@ window#waybar {
 
 
 #custom-cmus {
-    background: @gray;
     color: @fg;
     padding: 0 10 0 10;
     margin: 4 5 4 5;
@@ -88,11 +93,10 @@ window#waybar {
 }
 
 #pulseaudio {
-    background: @gray;
     color: @fg;
-    padding: 0 10 0 10;
-    margin: 4 5 4 5;
+    margin: 3 5 3 5;
     border-radius: 18;
+    font-size : 15px;
 }
 
 #cpu {
@@ -104,7 +108,6 @@ window#waybar {
 }
 
 #memory {
-    background: @gray;
     color: @fg;
     padding: 0 13 0 8;
     margin: 4 5 4 0;
@@ -112,19 +115,29 @@ window#waybar {
 }
 
 #battery {
-    background: @gray;
-    color: @fg;
-    padding: 0 8;
-    margin: 4 10 4 5;
-    border-radius: 18;
+    padding: 0 4;
+    margin: 3 5 4 5;
+    color: #FFFFFF;
+    
 }
 
 #custom-power {
-    background: @gray;
     color: @fg;
-    padding: 0 8;
+    padding: 0 10;
     margin: 4 10 4 5;
-    border-radius: 18;
+    font-weight : 400;
 }
+
+#network{
+    color: #FFFFFF;
+    margin: 4 0 4 5;
+    border-radius: 9 0 0 9;
+    font-size: 15px;
+}
+
+#window{
+    color: #FFFFFF;
+}
+
 
 
