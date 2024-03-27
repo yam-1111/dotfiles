@@ -9,6 +9,9 @@ udiskie >/dev/null 2>&1 &
 #pcmanfm-qt --desktop
 # cairo-dock > /dev/null 2>&1 &
 
+# rclone syncs
+~/.config/rclone/rclone.sh
+
 
 # Так подключается утилита kanshi для управления профилями вывода изображений.
 # Типо моник к ноуту подключил и экран ноута погас, а картинка ушла на моник. 

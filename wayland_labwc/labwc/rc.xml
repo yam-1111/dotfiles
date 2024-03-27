@@ -16,7 +16,7 @@
     <windowSwitcher show="yes" preview="yes" outlines="no" />
    </core>
 
-
+	
 <!-- тема labwc / скругления / шрифт -->  
   <theme>
     <name>siduck-onedark</name>
@@ -34,6 +34,13 @@
       <weight>Regular</weight>
       <slant>Normal</slant>
     </font>
+    
+    <applications>
+  <application name="*" class="*" role="*" title="*" type="*">
+    <decorate>yes</decorate>
+    <title>%n</title> </application>
+</applications>
+
 
   </theme>
 
@@ -71,9 +78,16 @@
     <keybind key="A-F4">
       <action name="Close" />
     </keybind>
-    <keybind key="W-a">
+    
+    <!---Workspace & Window management-->
+    <keybind key="W-Prior">
       <action name="ToggleMaximize" />
     </keybind>
+    
+       <keybind key="W-Next">
+      <action name="ToggleMinimize" />
+    </keybind>
+    
     <keybind key="A-Left">
       <action name="MoveToEdge" direction="left" />
     </keybind>
