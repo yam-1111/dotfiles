@@ -32,6 +32,8 @@
 ![catppuccin-macchiato](catppuccin-macchiato.png)
 ### Catppuccin Mocha
 ![catppuccin-mocha](catppuccin-mocha.png)
+### Yam Macchiato
+![yam-macchiato](yam-macchiato.png)
 
 ##  Features
 ### Resizable sidebar
