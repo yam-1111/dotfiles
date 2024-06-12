@@ -42,31 +42,31 @@
 
 //--------------RIGHT MODULES--------------
 "network":{
-	"format-wifi": "  ",
-	"format-ethernet": "  ",
-    "format-disconnected": "󰖪  ",
-	"tooltip-format" : "{essid}",
+	"format-wifi": "􀙇 ",
+	"format-ethernet": "􀩸 ",
+    "format-disconnected": "􀙈 ",
+	"tooltip-format" : "Connected @ {essid}",
 },
 
 "pulseaudio": {
 	"scroll-step": 5, // %, can be a float
-        "format": "<span color=\"#FFFFFF\">{icon}</span>",
+        "format": "<span color=\"#FFFFFF\">{icon}</span><span>{format_source}</span>",
         "format-bluetooth": "{icon}  {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "",
-        "format-source-muted": "",
-        "format-icons": {"default": ["", "", ""]},
+        "format-bluetooth-muted": "􀊣  {format_source}",
+        "format-muted": "􀊣 {format_source}",
+        "format-source": "􀊱",
+        "format-source-muted": "  􀊳",
+        "format-icons": {"default": ["􀊥", "􀊧", "􀊩"]},
 	"on-click": "pavucontrol",
 	"tooltip-format" : "{volume} %"
 },
 
 "battery":{
-	"format": "<span  color=\"#FFFFFF\" font='Font Awesome 5 Free 11'>{icon}</span>    {capacity}%",
-	"format-icons": ["", "", "", "", ""],
+	"format": "<span  color=\"#FFFFFF\" size='large'>{icon}</span>  {capacity}%",
+	"format-icons": ["􀛪", "􀛩", "􀺶", "􀺸" ,"􀛨"],
 	"format-time": "{H}h{M}m",
-	"format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>    {capacity}%",
-	"format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  Charged",
+	"format-charging": "<span>􀋥</span>  <span size='large'>{icon}</span>  {capacity}%",
+	"format-full": "<span font='Font Awesome 5 Free'>􀋨</span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  Charged",
 	"interval": 30,
 	"states": {
 		"warning": 25,
@@ -83,7 +83,9 @@
 "custom/time": {
     "format": "{}",
     "exec": "date '+%a, %b %d %Y %l:%M %p'",
-    "interval": 30
+    "interval": 30,
+    "tooltip" : true,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
 },
 
 "escape": true,

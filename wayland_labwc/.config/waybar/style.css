@@ -1,6 +1,6 @@
 
 * {
-    font-family: Inter, FontAwesome;
+    font-family: Inter, FontAwesome, SF-Pro;
     font-size: 13px;
     font-weight: 600;
     min-height: 0;
@@ -36,7 +36,7 @@ window#waybar {
     background-size: contain;
     color: #FFFFFF;
     padding: 0 4px;
-    margin: 4 10;
+    margin: 4 3;
     font-size: 18px;
 }
 
@@ -45,9 +45,9 @@ window#waybar {
 }
 
 #taskbar button {
-    padding: 0 5 0 3;
+    padding: 0 3 0 3;
     margin: 4 0;
-    border-radius: 18;
+    border-radius: 10;
     color: transparent;
 }
 
@@ -94,7 +94,7 @@ window#waybar {
 
 #pulseaudio {
     color: @fg;
-    margin: 3 5 3 5;
+    margin: 3 6 3 3;
     border-radius: 18;
     font-size : 15px;
 }
@@ -115,8 +115,8 @@ window#waybar {
 }
 
 #battery {
-    padding: 0 4;
-    margin: 3 5 4 5;
+    padding: 0 3;
+    margin: 2 3 4 5;
     color: #FFFFFF;
     
 }
@@ -125,7 +125,7 @@ window#waybar {
     color: @fg;
     padding: 0 10;
     margin: 4 10 4 5;
-    font-weight : 400;
+    font-weight : 500;
 }
 
 #network{
