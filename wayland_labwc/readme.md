@@ -2,6 +2,10 @@
 
 list of my config stuffs on `./config` folder
 
+## NOTE : Waybar
+
+To install properly the waybar, please install the Apple [sf-fonts](https://github.com/yam-1111/sf-ttf)
+
 ## Setup
 
 * fontawesome6
@@ -29,3 +33,5 @@ list of my config stuffs on `./config` folder
 * alacritty (terminal)
 
 ![labwc](labwc_desktop.png)
+
+
