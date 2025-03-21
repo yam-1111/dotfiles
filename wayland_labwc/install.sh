@@ -75,6 +75,7 @@ fi
 
 ############ Install Required Packages ############
 packages=(
+    "python"
     "labwc"
     "waybar"
     "rofi"
