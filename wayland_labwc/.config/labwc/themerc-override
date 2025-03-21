@@ -7,7 +7,12 @@
 
 # general
 border.width: 1
-padding.height: 8
+titlebar.height: 10
+
+window.button.height: 28
+window.titlebar.padding.width: 5
+window.titlebar.padding.height:3
+window.button.spacing: -100
 
 # Цвета рамок окон
 window.active.border.color: #23252e

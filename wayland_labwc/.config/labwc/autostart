@@ -1,11 +1,11 @@
 # Аutostart
 
 ##### temp ######
-swaybg -i /home/vee/Downloads/sonoma3.jpg &
+swaybg -i /home/vee/personal/wallpaper/win11.jpg &
 waybar >/dev/null 2>&1 &
 mako >/dev/null 2>&1 &
 udiskie >/dev/null 2>&1 &
-
+greenclip daemon >/dev/null 2>1 &
 #pcmanfm-qt --desktop
 # cairo-dock > /dev/null 2>&1 &
 

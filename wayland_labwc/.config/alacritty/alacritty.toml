@@ -155,8 +155,8 @@ multiplier = 3
 #startup modes:Windowed, Maximized, Fullscreen
 [window]
 dynamic_padding = false
-opacity = 1.0
-title = "Alacritty"
+opacity = 0.95
+title = "terminal"
 startup_mode = "Windowed"
 
 [window.class]

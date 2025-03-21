@@ -8,17 +8,19 @@ XDG_SESSION_DESKTOP=wlroots
 XDG_SESSION_TYPE=wlroots
 
 # Настройка раскладки клавиатуры:
-XKB_DEFAULT_LAYOUT=us
 XKB_DEFAULT_OPTIONS=grp:alt_shift_toggle
 
 # Рыжий стартует под вялым, а не через иксы
 MOZ_ENABLE_WAYLAND=1
 
 # Курсоры
-XCURSOR_THEME=breeze_cursors
 
 # Какое то отключение аппаратных курсоров, яхз что это
 WLR_NO_HARDWARE_CURSORS=1
 
 # Что то для нормальной работы жабоприложений
 _JAVA_AWT_WM_NONREPARENTING=1
+XCURSOR_THEME=Adwaita
+XCURSOR_SIZE=24
+XKB_DEFAULT_LAYOUT=us
+XKB_DEFAULT_VARIANT=

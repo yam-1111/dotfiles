@@ -37,7 +37,7 @@ window#waybar {
     color: #FFFFFF;
     padding: 0 4px;
     margin: 4 3;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 #taskbar button.active{
@@ -45,10 +45,11 @@ window#waybar {
 }
 
 #taskbar button {
-    padding: 0 3 0 3;
+    padding: 1 1 0 3;
     margin: 4 0;
     border-radius: 10;
     color: transparent;
+    font-size : 50;
 }
 
 #taskbar button:hover {

@@ -1,107 +1,93 @@
-// Load with --load-config examples/2.jsonc
-// Note that you must replace the image path to an existing image to display it.
-
+// ~/.config/fastfetch/config.jsonc
+// See https://github.com/fastfetch-cli/fastfetch/wiki/Configuration for more details
+// See *.jsonc in https://github.com/fastfetch-cli/fastfetch/tree/dev/presets/examples for more examples
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-        "padding": {
-            "top": 1
-        }
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "arch",
+     "type": "small",
+    "color": {
+      "1": "magenta",
+      "2" : "magenta"
     },
-    "display": {
-        "separator": " -> "
+    "padding": {
+      "top": 3
+    }
+  },
+  "display": {
+    "separator": "    "
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
     },
-    "modules": [
-        "title",
-        "separator",
-        {
-            "type": "os",
-            "key": " OS",
-            "keyColor": "yellow",
-            "format": "{2}"
-        },
-        {
-            "type": "kernel",
-            "key": "├",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "packages",
-            "key": "├󰏖",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "shell",
-            "key": "└",
-            "keyColor": "yellow"
-        },
-        "break",
-
-        {
-            "type": "wm",
-            "key": " DE/WM",
-            "keyColor": "blue"
-        },
-        {
-            "type": "lm",
-            "key": "├󰧨",
-            "keyColor": "blue"
-        },
-        {
-            "type": "wmtheme",
-            "key": "├󰉼",
-            "keyColor": "blue"
-        },
-        {
-            "type": "icons",
-            "key": "├󰀻",
-            "keyColor": "blue"
-        },
-        {
-            "type": "terminal",
-            "key": "├",
-            "keyColor": "blue"
-        },
-        {
-            "type": "wallpaper",
-            "key": "└󰸉",
-            "keyColor": "blue"
-        },
-
-        "break",
-        {
-            "type": "host",
-            "key": " PC",
-            "keyColor": "green"
-        },
-        {
-            "type": "cpu",
-            "key": "├\uf4bc",
-            "keyColor": "green"
-        },
-
-        {
-            "type": "disk",
-            "key": "├",
-            "keyColor": "green"
-        },
-        {
-            "type": "memory",
-            "key": "├󰑭",
-            "keyColor": "green"
-        },
-        {
-            "type": "uptime",
-            "key": "├󰅐",
-            "keyColor": "green"
-        },
-        {
-            "type": "display",
-            "key": "└󰍹",
-            "keyColor": "green"
-        },
-
-        "break",
-        "colors"
-    ]
+    "break",
+    {
+      "type": "os",
+      "key": "   ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "kernel",
+      "key": "  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "packages",
+      "key": "   ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "wm",
+      "key": "  󰨇",
+      "keyColor": "blue"
+    },
+    {
+      "type": "terminal",
+      "key": "  ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "shell",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
+    },
+    "break",
+    {
+      "type": "host",
+      "key": "  ",
+      "keyColor": "bright_blue"
+    },
+    {
+      "type": "cpu",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "gpu",
+      "key": "  󱤓",
+      "keyColor": "red"
+    },
+    {
+      "type": "memory",
+      "key": "  󰍛",
+      "keyColor": "bright_yellow"
+    },
+    {
+      "type": "disk",
+      "key": "  ",
+      "keyColor": "bright_cyan"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    }
+  ]
 }

@@ -57,6 +57,11 @@
     </fields>
   </windowSwitcher>
 
+  <titlebar>
+    <layout>icon:iconify,max,close</layout>
+    <showTitle>yes|no</showTitle>
+  </titlebar>
+
   <!-- edge strength is in pixels -->
   <resistance>
     <screenEdgeStrength>20</screenEdgeStrength>

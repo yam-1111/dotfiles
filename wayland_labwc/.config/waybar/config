@@ -19,7 +19,8 @@
 	"format": "󰣇 ",
 	"format-icons": " 󰣇 ",
    	"on-click": "set $menu dmenu_path | wofi --show drun -I | xargs swaymsg exec --",
-   	"escape": true
+   	"escape": true,
+   	"on-click": "rofi -theme rounded-purple-dark.rasi -show drun"
 },
 
 
@@ -77,15 +78,17 @@
 },
 
 "clock": {
-	"format": "{:%a, %b %e %Y %I:%M %p}"
+	"format": "{:%a, %b %e %Y %I:%M %p}",
+	"timezone": "Asia/Manila"
 },
 
 "custom/time": {
     "format": "{}",
-    "exec": "date '+%a, %b %d %Y %l:%M %p'",
+    "exec": "date '+%a, %b %d %l:%M %p'",
     "interval": 30,
     "tooltip" : true,
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "timezone": "Asia/Manila"
 },
 
 "escape": true,
