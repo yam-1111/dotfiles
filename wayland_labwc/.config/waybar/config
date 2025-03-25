@@ -10,13 +10,13 @@
 	"custom/menu", "wlr/taskbar"
 ],
 "modules-right": [
-	"custom/cmus", "network", "pulseaudio", "battery", "custom/time"
+	"custom/cmus", "pulseaudio" , "network", "battery", "custom/time"
 ],
 
 //-------------LEFT MODULES-------------
 
 "custom/menu": {
-	"format": "󰣇 ",
+	"format": " 󰣇",
 	"format-icons": " 󰣇 ",
    	"on-click": "set $menu dmenu_path | wofi --show drun -I | xargs swaymsg exec --",
    	"escape": true,
@@ -43,7 +43,7 @@
 
 //--------------RIGHT MODULES--------------
 "network":{
-	"format-wifi": "􀙇 ",
+	"format-wifi": "􀙇",
 	"format-ethernet": "􀩸 ",
     "format-disconnected": "􀙈 ",
 	"tooltip-format" : "Connected @ {essid}",
@@ -51,23 +51,23 @@
 
 "pulseaudio": {
 	"scroll-step": 5, // %, can be a float
-        "format": "<span color=\"#FFFFFF\">{icon}</span><span>{format_source}</span>",
+        "format": "<span>{format_source}</span> <span color=\"#FFFFFF\">{icon}</span>",
         "format-bluetooth": "{icon}  {format_source}",
         "format-bluetooth-muted": "􀊣  {format_source}",
         "format-muted": "􀊣 {format_source}",
-        "format-source": "􀊱",
-        "format-source-muted": "  􀊳",
+        "format-source": "",
+        "format-source-muted": "􀊳 ",
         "format-icons": {"default": ["􀊥", "􀊧", "􀊩"]},
 	"on-click": "pavucontrol",
 	"tooltip-format" : "{volume} %"
 },
 
 "battery":{
-	"format": "<span  color=\"#FFFFFF\" size='large'>{icon}</span>  {capacity}%",
+	"format": "{capacity}%  <span color=\"#FFFFFF\" size='large'>{icon}</span>",
 	"format-icons": ["􀛪", "􀛩", "􀺶", "􀺸" ,"􀛨"],
 	"format-time": "{H}h{M}m",
-	"format-charging": "<span>􀋥</span>  <span size='large'>{icon}</span>  {capacity}%",
-	"format-full": "<span font='Font Awesome 5 Free'>􀋨</span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  Charged",
+	"format-charging": "{capacity}%  <span size='large'>{icon}</span> <span>􀋥</span> ",
+	"format-full": "􀨣",
 	"interval": 30,
 	"states": {
 		"warning": 25,
