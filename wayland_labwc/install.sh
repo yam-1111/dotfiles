@@ -101,6 +101,7 @@ packages=(
     "ttf-ms-fonts"
     "ttf-roboto"
     "noto-fonts"
+    "nmap"
 )
 sudo pacman -Sy && yay -Sy
 for package in "${packages[@]}"; do
