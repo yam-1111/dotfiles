@@ -76,9 +76,12 @@ fi
 
 ############ Install Required Packages ############
 packages=(
+    "ntfs-3g"
+    "os-prober"
     "python"
     "labwc"
     "waybar"
+    "udiskie"
     "rofi"
     "thunar"
     "visual-studio-code-bin"  
