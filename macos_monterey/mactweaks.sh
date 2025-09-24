@@ -21,3 +21,5 @@ defaults write NSGlobalDomain NSWindowResizeTime .001
 defaults write com.apple.dock expose-animation-duration -int 0; killall Dock
 defaults write com.apple.dock expose-animation-duration -float 0.1; killall Dock
 defaults write com.apple.finder QuitMenuItem -bool true; killall finder
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true;
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true;
