@@ -70,7 +70,9 @@ ZSH_THEME="duellj"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+git zsh-autosuggestions zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,15 +102,33 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+export PATH="/usr/local/mysql/bin:$PATH"
 
 
 alias py=python3
 alias src=source
+alias ac="src .venv/bin/activate"
 alias deac=deactivate
 alias slogs='cd "$(echo -n "2f55736572732f6d6163792f706572736f6e616c2f656475632f6d792d6f
 6273696469616e2d6769742ff09f948f207072697661746520f09f94922f
 6c6f6773" | xxd -r -p)"'
+alias lg=lazygit
+
+
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 neofetch
+
+export PATH="/Users/macy/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/macy/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/macy/Library/Application Support/Herd/config/php/84/"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/macy/Library/Application Support/Herd/bin/":$PATH
+
+
